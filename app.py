@@ -23,9 +23,9 @@ def show_movie_form():
 
 @app.route("/movies", methods=['POST'])
 def insert_movie():
-    connection = pymysql.connect(host='sesac-db.cyll0mqkobhi.ap-northeast-2.rds.amazonaws.com',
-                             user='sesac',
-                             password='sesac2022',
+    connection = pymysql.connect(host='sesac-db.-----------------------amazonaws.com',
+                             user='-----',
+                             password='------------',
                              database='SesacMovies',
                              cursorclass=pymysql.cursors.DictCursor)    
 
@@ -58,9 +58,9 @@ def insert_movie():
 
 @app.route("/movies", methods=['GET'])
 def show_movies():
-    connection = pymysql.connect(host='sesac-db.cyll0mqkobhi.ap-northeast-2.rds.amazonaws.com',
-                             user='sesac',
-                             password='sesac2022',
+    connection = pymysql.connect(host='sesac-db---------------------amazonaws.com',
+                             user='-----',
+                             password='---------',
                              database='SesacMovies',
                              cursorclass=pymysql.cursors.DictCursor)
     with connection:
